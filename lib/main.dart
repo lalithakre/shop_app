@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
+import './screens/products_overview_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-        home: Scaffold(
-            body: Center(
-      child: Text("Lalit"),
-    )));
+    return MaterialApp(
+      title: 'MyShop',
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: ProductsOverviewScreen(),
+    );
   }
 }
