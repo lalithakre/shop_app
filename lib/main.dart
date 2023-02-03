@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'MyShop',
-      theme: ThemeData(primarySwatch: Colors.purple, accentColor: Colors.amber),
+      theme: ThemeData(primarySwatch: Colors.purple),
       home: ProductsOverviewScreen(),
       routes: {ProductDetailScreen.routeName: (ctx) => ProductDetailScreen()},
     );
