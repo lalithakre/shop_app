@@ -14,4 +14,6 @@ class Product {
       required this.price,
       required this.imageUrl,
       this.isFavorite = false});
+
+  get items => null;
 }
